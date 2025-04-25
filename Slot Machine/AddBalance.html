@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #222;
+            color: white;
+        }
+        .container {
+            max-width: 400px;
+            margin: auto;
+            padding: 20px;
+            background: #333;
+            border-radius: 10px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background: #ffcc00;
+            border: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class = "container">
+        <h1>Add Balance</h1>
+        <p>Balance: $<span id="balance"></span></p>
+        <label>Add Amount: <input type="number" id="AddMoney" min="10" value="10"></label>
+        <button type="submit" onclick="AddMoney()">Summit</button>
+    </div>
+
+    <script src=/Js/Slot.js></script>
+</body>
+</html>

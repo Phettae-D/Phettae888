@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phettae 888</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #222;
+            color: white;
+        }
+
+        .container {
+            max-width: 400px;
+            margin: auto;
+            padding: 20px;
+            background: #333;
+            border-radius: 10px;
+        }
+
+        .reels {
+            display: flex;
+            justify-content: space-around;
+            font-size: 24px;
+            margin: 20px 0;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background: #ffcc00;
+            border: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>  
+    <div class="container">
+        <h1>Slot Machine</h1>
+        <p>Balance: $<span id="balance"> </span> <a href="AddBalance.html"><button>Add</button></a></p>
+        <label>Bet Amount: <input type="number" id="bet" min="1" value="5"></label>
+        <button onclick="startGame()">Spin</button>
+        <div class="reels" id="reels">
+            <span id="reel1">?</span> <span id="reel2">?</span> <span id="reel3">?</span>
+        </div>
+        <p id="result"></p>
+    </div>
+    <script src=/Js/Slot.js></script>
+</body>
+
+</html>
